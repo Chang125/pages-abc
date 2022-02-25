@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Noto Sans TC", sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+}
+header {
+  background-color: cornflowerblue;
+  width: 100%;
+  padding: 1.5rem 1.5rem;
+}
+header h1 {
+  font-size: 50px;
+}
+header h3 {
+  font-size: 25px;
+}
+
+nav {
+  background-color: black;
+}
+nav ul {
+  display: flex;
+  list-style-type: none;
+  padding-left: 1rem;
+}
+nav ul li {
+  display: flex;
+}
+nav ul li a {
+  padding: 0.75rem 1rem;
+  color: white;
+  text-decoration: none;
+  transition: all 0.5s ease;
+}
+nav ul li a:hover {
+  background-color: rgb(89, 0, 255);
+  transform: scale(1.15);
+}
+main {
+  width: 100%;
+  display: flex;
+}
+section.left,
+section.right {
+  padding: 2rem;
+}
+main section p {
+  font-size: 1.3rem;
+  text-align: left;
+  margin: 15px 0px;
+  text-indent: 42px;
+}
+main section h1 {
+  font-size: 2.5rem;
+  text-align: center;
+}
+.active {
+  background-color: rgb(89, 0, 255);
+}
+section.right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+section.right.p {
+  padding: 1.5rem 1rem;
+}
+iframe {
+  border-radius: 20px;
+  margin-bottom: 30px;
+}
+table,
+th,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+th,
+td {
+  padding: 0.5rem 0.75rem;
+}
+th {
+  background-color: gray;
+  color: white;
+  font-size: 1.5rem;
+}
+td:hover {
+  background-color: coral;
+  transform: scale(1.1);
+}
+th:hover {
+  background-color: cornflowerblue;
+}
+table {
+  text-align: center;
+  margin: auto;
+  width: 450px;
+  height: 300px;
+}
+img {
+  width: 800px;
+  height: 400px;
+}
+td {
+  transition: all 0.5s ease;
+}
