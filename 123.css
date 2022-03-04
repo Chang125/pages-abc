@@ -48,10 +48,11 @@ nav ul li a:hover {
 main {
   width: 100%;
   display: flex;
+  flex-wrap: wrap;
 }
 section.left,
 section.right {
-  padding: 2rem;
+  padding: 1rem;
 }
 main section p {
   font-size: 1.3rem;
@@ -70,6 +71,10 @@ section.right {
   display: flex;
   flex-direction: column;
   align-items: center;
+  flex: 1 1 250px;
+}
+section.left {
+  flex: 4 1 375px;
 }
 section.right.p {
   padding: 1.5rem 1rem;
@@ -91,7 +96,7 @@ td {
 th {
   background-color: gray;
   color: white;
-  font-size: 1.5rem;
+  font-size: 1.1rem;
 }
 td:hover {
   background-color: coral;
@@ -109,7 +114,47 @@ table {
 img {
   width: 800px;
   height: 400px;
+  transition: all 0.5s;
+  cursor: not-allowed;
+}
+img:hover {
+  transform: scale(1.1);
 }
 td {
   transition: all 0.5s ease;
+}
+body {
+  background-image: url(https://static.wixstatic.com/media/cf494e_af3ae68dbe054452bb43c756e9a4b201~mv2.jpeg);
+  background-repeat: repeat;
+  background-size: 200px 200px;
+}
+@media screen and (max-width: 620px) {
+  nav ul {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  img {
+    width: 100%;
+    height: 30%;
+  }
+  table {
+    width: 100%;
+    height: 60%;
+  }
+  header {
+    width: 100%;
+  }
+  nav ul li a:hover {
+    background-color: #000;
+    transform: none;
+  }
+  nav ul li a {
+    transition: none;
+    transform: none;
+  }
+  .active {
+    background-color: #000;
+  }
 }
