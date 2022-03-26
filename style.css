@@ -1,316 +1,199 @@
-@charset "UTF-8";
-
-html {
-  font-size: 100%;
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
+
+i {
+  pointer-events: none;
+}
+
 body {
-  line-height: 1.7;
-  color:#432;
-}
-a {
-  text-decoration: none;
-}
-img {
-  max-width: 100%
+  background: -webkit-gradient(linear, left top, right top, from(#5482ff), to(#64ff86));
+  background: linear-gradient(90deg, #5482ff, #64ff86);
 }
 
-.logo {
-  width: 250px;
-  margin-top: 20px;
-  margin-left: -140px
-}
-
-.main-nav {
+header {
+  height: 20vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  font-size:1.25rem;
-  text-transform:uppercase;
-  margin-top: 34px;
-  list-style: none;
-  margin-right: -100px;
-}
-.main-nav li{
-  margin-left:36px
-}
-.main-nav a{
-  color: #000;
-}
-.main-nav a:hover{
-  color: #FF2D2D;
-}
-.page-header{
-  display: flex;
-  justify-content: space-between;
-}
-.wrapper{
-  max-width: 1100px;
-  margin: 0 auto;
-  padding:0 4%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.home-content{
+header h1 {
+  color: white;
+  font-size: 3rem;
+}
+
+form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  /* Chrome, Safari, Edge, Opera */
+  /* Firefox */
+}
+
+form input,
+form button {
+  border: none;
+  padding: 0.25rem 0.5rem;
+  font-size: 1.75rem;
+  margin: 0.1rem;
+}
+
+form input[type="number"] {
+  width: 50px;
   text-align: center;
-  margin-top: 10%
-}
-.home-content p{
-    font-size: 1.125rem;
-    margin:10px 0 42px
-}
-.page-title{
-  font-size:3rem;
-  text-transform: uppercase;
-  font-weight: normal;
-}
-.button{
-  font-size:1.375rem;
-  background:#00DB00;
-  border-radius: 5px;
-  padding:18px 32px;
-
-}
-.button:hover{
-  background:#000
-}
-.big-bg{
-    background-size:cover;
-    background-position: center top;
-    background-repeat: no-repeat;
-}
-#home{
-  background-image: url(http://picsum.photos/1280/400?random=5);
-  min-height: 100vh;
-}
-#home.page-title{
-  text-transform: none;
 }
 
-#news{
-  background-image: url(https://www.bnpparibas-am.lu/private-investor-retail-investor/wp-content/uploads/sites/268/2018/08/Strategie_Epargne_1400x300.png);
-  height: 270px;
-  margin-bottom: 10px;
-  background-size: cover;
+form input::-webkit-outer-spin-button,
+form input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
-#news .page-title{
-  text-align: center
+
+form input[type="number"] {
+  -moz-appearance: textfield;
 }
-footer{
-  background: #000;
-  text-align:center;
-  padding: 15px 0;
+
+form button {
+  cursor: pointer;
+  background-color: #009272;
+  color: white;
 }
-footer p{
-  color:white;
-  font-size:1.5rem;
-}
-article{
-  width:74%;
-}
-aside{
-  width:22%;
-}
-.news-contents{
+
+section {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  margin-bottom: 50px;
-  margin-left: 200px;
-}
-.sub-title{
-  font-size:1.375rem;
-  padding:0 8px 8px;
-  border-bottom:2px  #000 solid;
-  font-weight:normal;
-  margin-top: 30px;
-
-}
-aside p{
-  padding:12px 10px;
-}
-.sub-menu{
-  margin-bottom: 60px;
-  list-style:none;
-  margin-top: 5px;
-  margin-left:0px;
-  margin-left: -20px;
-}
-.sub-menu li{
-  border-bottom:1px #ddd solid;
-}
-.sub-menu a{
-  color: #432;
-  padding:10px;
-  display:block;
-}
-.sub-menu a:hover{
-  color:#0bd;
-}
-.post-info{
-  position:relative;
-  padding-top:4px;
-  margin-bottom:40px;
-  margin: 0px;
-}
-.post-date{
-  background: #0bd;
-  border-radius: 50%;
-  color:#fff;
-  width:100px;
-  height:100px;
-  font-size:1.625rem;
-  text-align:center;
-  position:absolute;
-  top:0;
-  padding-top:10px;
-}
-.post-date span{
-  font-size:1rem;
-  border-top:1px rgba(255,255,255,5) solid;
-  padding-top:6px;
-  display: block;
-  width:60%;
-  margin:0 auto;
-}
-.post-title{
-  font-size:1.5rem;
-  font-weight:normal;
-  margin:10px;
-}
-.post-title,
-.post-cat{
-  margin-left:120px;
-}
-article img{
-  margin-bottom: 20px;
-}
-article p{
-  margin-bottom:1rem;
-}
-#menu{
-  background-image: url(http://picsum.photos/1800/480?random=1);
-  min-height:50vh;
-}
-.menu-content{
-  max-width:560px;
-  margin-top: 10%;
-
-}
-.menu-content.page-title{
-  text-align:center;
-  color: #FFF;
-}
-.page-title{
-  color: #FFF;
-}
-.menu-content p{
-  font-size: 1.125rem;
-  margin: 10px 0 0;
-  color: #FFF;
-}
-.grid{
-  display:grid;
-  gap:26px;
-  grid-template-columns: repeat(3,minmax(240px,1fr));
-  margin-top:2%;
-  margin-bottom:50px;
-}
-.more{
-  text-align: justify;
-}
-.video{
-  margin-top: 10px
-}
-.new-p{
-  margin-left: 270px;
-  line-height:60px;
-}
-.st-id{
-  font-size: 1.3rem;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.voca audio{
-  margin-left: 10px;
-}
-.voca{
-  border-bottom: 2px solid #0bd;
-  width:1100px;
-  margin-bottom: 30px;
-}
-.item-a{
-  border-radius:50%;
-}
-.vocaa{
-  border-bottom: 2px solid #0bd;
-  width:1100px;
-  margin-bottom: 30px;
-  line-height: 100px;
-}
-.news-contentsaa{
+section div.todo {
+  width: 30vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  margin-bottom: 50px;
-  margin-left: 640px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0.2rem 0rem;
+  -webkit-transition: all 0.1s ease;
+  transition: all 0.1s ease;
 }
-@media(max-width:600px){
-  h1{
-  color:#0bd;
+
+section div.todo p {
+  background-color: white;
+  color: black;
+  padding: 0.25rem 0.5rem;
+  font-size: 1.75rem;
+}
+
+section div.todo p.todo-text {
+  width: 50%;
+}
+
+section div.todo p.todo-time {
+  width: 20%;
+  text-align: center;
+}
+
+section div.todo button {
+  padding: 0.25rem 0.5rem;
+  font-size: 1.75rem;
+  border: none;
+  cursor: pointer;
+  color: white;
+}
+
+section div.todo button.complete {
+  background-color: #32ff32;
+}
+
+section div.todo button.trash {
+  background-color: red;
+}
+
+div.sort {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 1rem 0rem;
+}
+
+div.sort button {
+  cursor: pointer;
+  background-color: #009272;
+  color: white;
+  border: none;
+  padding: 0.25rem 0.5rem;
+  font-size: 1.75rem;
+}
+
+.done {
+  opacity: 0.5;
+  text-decoration: line-through;
+  text-decoration-thickness: 0.2rem;
+}
+
+@-webkit-keyframes scaleUp {
+  from {
+    -webkit-transform: scale(0);
+            transform: scale(0);
   }
-@media(max-width:600px){
-  .page-title{
-    font-size:1.5rem;
-  }
-  .main-nav{
-    font-size: 1rem;
-    margin-top:10px;
-  }
-  .main-nav li{
-    margin:0 20px;
-  }
-  .home-content{
-    margin-top:20%;
-  }
-  .page-header{
-    flex-direction: column;
-    align-items: center;
-  }
-  .news-contents{
-    flex-direction: column;
-    margin-left: -10px;
-  }
-  article,
-  aside{
-    width: 100%;
-  }
-  #news.page-title{
-    margin-top:30px;
-  }
-  aside{
-    margin-top: 60px;
-  }
-  .post-info{
-    margin-bottom: 30px;
-  }
-  .post-date{
-    width:70px;
-    height: 70px;
-    font-size:1rem;
-  }
-  .post-date span{
-    font-size:0.875rem;
-    padding-top: 2px;
-  }
-  .post-title{
-    font-size:1.3rem;
-  }
-  .post-cat{
-    font-size:0.875rem;
-  }
-  .post-title,
-  .post-cat{
-    margin-left:80px;
-  }
-  section{
-    width: 60%;
-    margin left:0px;
-  }
-  .new-p{
-    margin:10px;
-    font-size:0.7rem;
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
 }
+
+@keyframes scaleUp {
+  from {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@-webkit-keyframes scaleDown {
+  to {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+}
+
+@keyframes scaleDown {
+  to {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+}
+/*# sourceMappingURL=style.css.map */
